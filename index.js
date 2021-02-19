@@ -32,11 +32,11 @@ const addToDoItem = () => {
 				error.text('Your input is invalid');
 				inputItem.parent().append(error);
 			} else {
-                toDoItems.push(inputItem.val());
-                inputItem.val('');
-                localStorage.setItem('myToDoList', JSON.stringify(toDoItems));
-                location.reload();
-            }
+				toDoItems.push(inputItem.val());
+				inputItem.val('');
+				localStorage.setItem('myToDoList', JSON.stringify(toDoItems));
+				location.reload();
+			}
 		}
 	});
 };
@@ -61,7 +61,7 @@ $(document).ready(() => {
 	renderList(toDoItems, '#to-do-list');
 	renderList(completeItems, '#complete-list');
 	addToDoItem();
-    removeToDoItem();
-    $( "#to-do-list" ).sortable();
-    $( "#complete-list" ).sortable();
+	removeToDoItem();
+	$('#to-do-list').sortable();
+	$('#complete-list').sortable();
 });

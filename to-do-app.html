@@ -239,13 +239,29 @@
 
     ul,
     ol {
+      padding-left: 0;
       margin-top: 0;
       margin-bottom: 10px;
+      list-style-type: none;
     }
 
     ul li {
       cursor: move;
+      background: #eee;
+      padding:12px 8px 12px 40px;
+      font-size: 20px;
+      transition: 0.2s;
+      font-family: sans-serif;
+      font-weight: 400;
     }
+
+    ul li:nth-child(odd) { 
+      background: #f9f9f9;
+      }
+
+    ul li:hover {
+      background: #ddd;
+      }
 
     a {
       color: #428bca;
@@ -259,7 +275,7 @@
       font-weight: 200;
       line-height: 2.1;
       color: inherit;
-      background-color: #eee;
+      background-color:lightsteelblue;
     }
 
     main h1 {
