@@ -18,6 +18,9 @@ const renderList = (listItems, listDomId) => {
 			let checkbox = $(`<input type="checkbox">`);
 			listItem.append(checkbox);
 		}
+		if(listDomId == '#complete-list'){
+			listItem.css({ color: 'grey', textDecoration: 'line-through' });
+		}
 	});
 };
 
